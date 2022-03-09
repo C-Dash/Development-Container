@@ -1,0 +1,476 @@
+
+html, body {
+    background-color: $gray;
+    //margin: $spacing-s auto;
+    //height:   100%;
+    
+    }
+    .leaflet-popup{
+        max-width: 250px;
+        white-space: normal;
+    }
+
+//#canvas {
+//    //width: 60%;  //added for dcsah split
+//    background-color: $page;
+//    @include container;
+    //min-height: 100%;
+    //height:   100%;
+    
+//    }
+
+    // New map div for CDASH SPLIT
+#cdash_map {    
+  //  padding: 0 gutter() $spacing-l;
+    //width: span(6 of 12);
+  //  width: 50%;
+    background-color: $page;
+    //height: 100%;
+  //  float: left;
+    //position: fixed;
+ //   height: 100%;
+}
+
+#showresult {
+    background-color: $page;
+    padding-left: 4px;
+    padding-right: 8px;
+}
+
+//#cdash_map.scrolls {
+//    position: static;
+//    width: 50%;
+    //background-color: black;
+//    //color: red;
+ //   height: 100%;
+//}
+//#cdash_map.fixed {
+//    position: fixed;
+//    top: (1.75 * $spacing-l);  // same height as menu bar
+ //   width: 50%;
+    //background-color: red;
+    //color: black;
+//    height: 100%;
+//}
+ 
+
+#cdash_map #map {
+    //margin: $spacing-s;
+    //margin-top: $spacing-m;
+    //width: 50%;
+
+}
+
+#baseMapButtons, #overlayBoxes {
+    //overflow-y: auto; 
+    //overflow-x: hidden;
+    padding-left: 8px;
+    padding-right: 4px;
+    //overflow-x: visible;
+   }
+
+//#content {
+//    //padding: 0 (2 * gutter()) $spacing-l;
+//    padding: 0 gutter() $spacing-l;
+    //width: 60%;
+//    float: right;
+//    width: span(6 of 12 last);
+    //height: 100%;
+    //overflow: auto;
+//}
+
+
+// ADDED for CDASH
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    display: inline-block;
+    width: 250px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    border-width: 1px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+p {
+    display: block;
+    margin-block-start: $spacing-m;
+    margin-block-end: $spacing-m;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+table {
+    margin: $spacing-l 0;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: left;
+    padding: $spacing-s $spacing-m;
+    padding-bottom: $spacing-s - 1px;
+    border-bottom: 1px solid $gray;
+}
+
+/* @group ----- Header ----- */
+
+#banner {
+    background-color: $darkgray;
+}
+
+#header {
+    //position: relative;
+    //padding: $spacing-s 0 0;
+    //margin-bottom: 2 * $spacing-l;
+    //background-color: $page;
+    background-color: $darkgray;
+    //position: fixed;
+}
+
+#header > * {
+    //padding: 0 (2 * gutter());
+    padding: 0 0 0 0;
+}
+
+//#header.fixed {
+//    position: fixed;
+ //   width: 1328px;
+//    top: -115px;
+
+//}
+
+
+
+
+#header > h1 {
+    //margin: $spacing-s auto;
+    padding: 0 0 0 0;
+    line-height: 34px;
+}
+
+/* @end */
+
+/* @group ----- Footer ----- */
+
+#footer {
+    //padding: 0 $spacing-l $spacing-l;
+    //height: (1.5 * $spacing-l);
+    //width: 50%;
+    //added for cdash split
+    //position: fixed; 
+    //bottom: 100vh;
+    //clear: left;
+}
+
+/* @end */
+
+/* @group ----- Navigation ----- */
+
+#menubar {
+    background-color: #60655F;
+    height: (1.5 * $spacing-l);
+    //@include container;
+}
+
+#navmenu {
+
+    background-color: $darkgray;
+}
+
+nav {
+    //margin: 0 auto;
+    //dhanges for cdash_split
+    //position: static;
+    //position: relative;
+    //width: 75%;
+    //width: span(8 of 12 last);
+    //float: left;
+    //padding: 0 calc(0.5 * $spacing-l);
+    //background-color: $page;
+}
+
+nav {
+ a:link, a:visited, a:hover {
+    color: $page;
+}}
+
+nav:before {
+    content: "";
+    border: 0;
+    display: none;
+}
+
+nav ul a {
+    padding: 0;
+}
+
+nav ul li {
+    position: static;
+}
+
+// Original
+nav.closed ul,
+nav ul ul li {
+    height: auto;
+    overflow: visible;
+}
+
+
+
+
+nav ul a:hover {
+    background-color: transparent;
+}
+
+nav ul li,
+nav > ul li:last-child,
+nav > ul ul:hover > li {
+    border: 0;
+}
+
+nav ul.navigation {
+    margin-left: -$spacing-s;
+    //position: static;
+    display: flex;
+    align-items: flex-end;
+    // these two added for CDASH Split
+    margin-block-start: 0.25em;
+    margin-block-end: 0px;
+    list-style-type: none;
+
+    li ul:before {
+        display: none;
+    }
+
+    & > li:not(:last-child) {
+        margin-right: $spacing-m;
+    }
+
+    & > li > ul {
+        position: absolute;
+        top: 100%;
+        left: -9999px;
+        //background-color: #fff;
+        padding: 0;
+        // for cdash split
+        list-style-type: none;
+        list-style: none;
+        width: 100%;
+        padding: ($spacing-m - 1px) 0 ($spacing-s - 1px);
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        z-index: 1;
+    }
+
+    & > li:hover > ul {
+        @include container;
+        padding: $spacing-m calc(0.5 * $spacing-l) ;
+        left: 0;
+        right: 0;
+        border-bottom: 0;
+        //border-color: $light;
+
+        &:after {
+            content: "";
+            left: -9999px;
+            right: -9999px;
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            border-bottom: 1px solid $light;
+            border-top: 1px solid $light;
+            z-index: -1;
+        }
+    }
+
+    & > li > ul > li {
+        width: 25%;
+        font-size: .75 * $base-font-size;
+        font-weight: bold;
+        padding-bottom: $spacing-l;
+    }
+
+    & > li > ul > li ul {
+        font-weight: normal;
+        padding: 0;
+        list-style-type: none;
+        height: auto;
+    }
+}
+
+nav > ul > li > a {
+    margin: $spacing-l;
+    color: $page;
+}
+
+/* All top-level nav items with siblings are parent items and get an arrow. */
+nav > ul > li > a:not(:only-child):after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    display: inline-block;
+    margin-left: $spacing-s;
+}
+
+nav > ul li:hover ul li {
+    height: auto;
+    padding: 0;
+}
+
+/* Second and Third level items */
+nav > ul > li > ul > li a,
+nav > ul > li > ul > li > ul > li a {
+    padding-left: 0;
+}
+
+.sub-menu ul {
+    border-bottom: 1px solid $light;
+    padding-bottom: ($spacing-m - 1px);
+}
+
+.sub-menu li {
+    display: inline-block;
+    border: 0;
+    padding: 0;
+    margin-right: $spacing-m;
+
+    &:first-of-type {
+        border: 0;
+        padding: 0;
+    }
+}
+
+#search {
+    //display: inline-block;
+    //width: span(3 of 12 last);
+    //left: 75%;
+    //width: 25%;
+    //changes for cdash_split
+    //position: relative;
+    //float: right;
+    //padding: 2px;
+    background-color: $darkgray;
+    //border: 0;
+    //border-left: 1px solid $light;
+    //padding: $spacing-s;
+    //padding: 0 (2 * gutter()) $spacing-l;
+    //margin-right: 4 * gutter();
+    //background-color: $page;
+    //margin: $spacing-s;
+    //margin-right: auto;
+ 
+
+
+}
+
+#search form input[type="text"],
+#search form button[type="submit"] {
+    //height: $base-line-height;
+    height: 100%;
+    padding: 2px;
+    //font-size: .75 * $base-font-size;
+    //line-height: $base-line-height;
+}
+
+#search form button[type="submit"] {
+    width: $base-line-height;
+    //height: $base-line-height;
+    height: 100%;
+    padding: 2px;
+    //padding: 0;
+
+    &:before {
+        //line-height: $base-line-height;
+    }
+}
+
+/* @end */
+
+/* @group ----- Resource List ----- */
+
+ul.resource-list .resource img {
+    width: 4 * $spacing-l;
+    height: auto;
+    float: right;
+    margin-left: $spacing-m;
+}
+
+ul.resource-list .resource img ~ * {
+    width: calc(100% - #{4.5 * $spacing-l});
+}
+
+/* @end */
+
+/* @group ----- Item Set ----- */
+
+body.item-set.item #content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    & > h2,
+    & > h3 {
+        width: 100%;
+    }
+}
+
+body.item-set .metadata {
+    width: span(4 of 12 alpha);
+    border-left: 5px solid $light;
+    padding-left: gutter();
+    margin-right: gutter();
+}
+
+body.item-set .metadata h4:first-of-type {
+    margin-top: 0;
+}
+
+body.item-set #content .metadata ~ * {
+    width: span(8 of 12 omega);
+    border-left: 1px solid $light;
+    padding-left: gutter();
+}
+
+body.item-set .item-set-items h3 {
+    margin-top: 0;
+}
+
+body.item-set .metadata ~ nav.pagination:first-of-type {
+    margin-bottom: 0;
+}
+
+
+/* @end */
+
+/* @group ----- Page and blocks ----- */
+
+.preview-block {
+    clear: both;
+}
+
+ul.preview.resource-list li:first-of-type {
+    border-top: 1px solid $light;
+    padding-top: ($spacing-l - 1px);
+}
+
+/* @end */

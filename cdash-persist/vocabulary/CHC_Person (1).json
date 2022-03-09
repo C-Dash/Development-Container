@@ -1,0 +1,95 @@
+{
+    "o:label": "CHC_Person",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": "Name of Person",
+            "o:alternate_comment": "The Name of the person.  Select from LC Name Authority if you can. ",
+            "o:is_required": true,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "title",
+            "label": "Title"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "Enter Birthday first and add a second date to register the end-date.  YYY-MM-DD",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "date",
+            "label": "Date"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "description",
+            "label": "Description"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "valuesuggest:lc:subjects",
+            "data_type_label": "LC: Subject Headings",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "subject",
+            "label": "Subject"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "Residence, workplace or frequent haunt as described in the description. ",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "resource:item",
+            "data_type_label": "Item",
+            "vocabulary_namespace_uri": "http:\/\/c-dash5.azurewebsites.net\/omeka-s\/ns\/cdash\/",
+            "vocabulary_label": "CDASH",
+            "local_name": "buildingItem",
+            "label": "CDASH Building"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "Relative or collaborator or other associated person as described in the description. ",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "resource:item",
+            "data_type_label": "Item",
+            "vocabulary_namespace_uri": "http:\/\/c-dash5.azurewebsites.net\/omeka-s\/ns\/cdash\/",
+            "vocabulary_label": "CDASH",
+            "local_name": "personItem",
+            "label": "CDASH Person"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "Residence, workplace or frequent haunt as described in the description. ",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "resource:item",
+            "data_type_label": "Item",
+            "vocabulary_namespace_uri": "http:\/\/c-dash5.azurewebsites.net\/omeka-s\/ns\/cdash\/",
+            "vocabulary_label": "CDASH",
+            "local_name": "streetAddress",
+            "label": "CDASH Address"
+        }
+    ],
+    "o:resource_class": {
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+        "vocabulary_label": "Dublin Core",
+        "local_name": "Agent",
+        "label": "Agent"
+    }
+}

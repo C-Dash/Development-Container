@@ -1,0 +1,1239 @@
+@media screen {
+  /* line 1, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  * {
+    box-sizing: border-box;
+  }
+  /* line 5, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  /* line 11, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  body {
+    background-color: #eeedec;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    line-height: 21px;
+    margin: 0;
+    word-wrap: break-word;
+  }
+  /* line 20, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  a:link {
+    text-decoration: none;
+    color: #920b0b;
+  }
+  /* line 25, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  a:visited {
+    color: #920b0b;
+  }
+  /* line 29, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  a:active,
+  a:hover {
+    color: #ed1616;
+  }
+  /* line 34, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  h1 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+  /* line 39, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  h2 {
+    font-size: 25.5px;
+    line-height: 31.5px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+  }
+  /* line 46, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  h3 {
+    font-size: 21.25px;
+    line-height: 31.5px;
+  }
+  /* line 51, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  h4 {
+    font-size: 19.125px;
+    line-height: 23.625px;
+    margin-block-start: 8px;
+    margin-block-end: 8px;
+  }
+  /* line 58, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* @group ----- Forms ----- */
+  /* line 65, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  input,
+  textarea,
+  button,
+  .button,
+  select {
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    line-height: 21px;
+    margin: 0;
+    vertical-align: top;
+  }
+  /* line 77, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="url"],
+  textarea {
+    appearance: none;
+    border-radius: 0;
+    height: 31.5px;
+    border: 1px solid #d6d3d1;
+    padding: 4.25px 1.69492%;
+    margin: 0;
+  }
+  /* line 90, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  textarea {
+    height: 63px;
+  }
+  /* line 94, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  input[type="file"] {
+    line-height: 1;
+    vertical-align: bottom;
+    font-size: 12.75px;
+  }
+  /* line 100, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  button,
+  a.button,
+  [type="submit"] {
+    background-color: #d6d3d1;
+    border-radius: 2px;
+    padding: 5.25px;
+    display: inline-block;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0;
+    cursor: pointer;
+  }
+  /* line 114, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  select {
+    background-color: #fff;
+    padding: 5.25px;
+    border-color: #d6d3d1;
+    height: 31.5px;
+  }
+  /* line 121, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  ::-webkit-input-placeholder {
+    font-style: italic;
+  }
+  /* line 125, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  :-moz-placeholder {
+    /* Firefox 18- */
+    font-style: italic;
+  }
+  /* line 129, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-style: italic;
+  }
+  /* line 133, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  :-ms-input-placeholder {
+    font-style: italic;
+  }
+  /* line 137, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .field {
+    margin: 21px 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  /* line 147, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .field .field-meta {
+    width: 30%;
+    padding: 5.25px 1.69492% 0 0;
+  }
+  /* line 152, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .field .inputs {
+    width: 70%;
+    padding-left: 1.69492%;
+  }
+  /* line 156, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .field .inputs > select,
+  .field .inputs > textarea,
+  .field .inputs > input[type="text"],
+  .field .inputs > input[type="password"],
+  .field .inputs > input[type="email"],
+  .field .inputs > input[type="url"] {
+    width: 100%;
+  }
+  /* line 165, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .field .inputs input[type="checkbox"] {
+    vertical-align: bottom;
+  }
+  /* line 170, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .field.required .field-meta:after {
+    content: "\f069";
+    font-family: "Font Awesome 5 Free";
+    font-size: 12.75px;
+  }
+  /* line 176, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .field .value:not(:last-child) {
+    margin-bottom: 10.5px;
+  }
+  /* line 180, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .field-description {
+    font-size: 12.75px;
+  }
+  /* @end */
+  /* @group ----- Navigation ----- */
+  /* line 188, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header h1 {
+    margin: 0;
+  }
+  /* line 192, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header nav {
+    position: relative;
+    padding: 0;
+  }
+  /* line 197, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header nav.closed ul {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+  }
+  /* line 203, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header nav:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c9";
+    display: block;
+    width: 26.25px;
+    height: 26.25px;
+    border: 1px solid #d6d3d1;
+    text-align: center;
+    border-radius: 2px;
+    position: absolute;
+    right: 1.69492%;
+    top: -34.125px;
+    cursor: pointer;
+    line-height: 26.25px;
+  }
+  /* line 224, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header nav.open:before {
+    content: "\f00d";
+  }
+  /* line 228, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header nav ul {
+    padding-left: 0;
+    list-style: none;
+    position: relative;
+    margin: 0 auto;
+  }
+  /* line 234, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header nav ul a {
+    display: inline-block;
+    width: 100%;
+    padding: 5.25px;
+  }
+  /* line 240, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header nav ul a:hover {
+    border-bottom: 0;
+    background-color: #d6d3d1;
+  }
+  /* line 245, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header nav ul li {
+    border-top: 1px solid #d6d3d1;
+    position: relative;
+  }
+  /* line 250, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header nav ul li li:last-of-type {
+    padding-bottom: 0;
+  }
+  /* line 254, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header nav ul li.active {
+    font-weight: bold;
+  }
+  /* line 258, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header nav ul li > ul:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f105";
+    position: absolute;
+    right: 0;
+    top: -31.5px;
+    color: #d6d3d1;
+    width: 21px;
+    height: 31.5px;
+    line-height: 31.5px;
+    text-align: center;
+  }
+  /* line 271, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header nav ul li > ul:hover:before {
+    content: "\f107";
+  }
+  /* line 275, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header nav ul a:hover ~ ul:before {
+    color: #a7a09a;
+  }
+  /* line 280, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header nav > ul > li:last-child {
+    border-bottom: 1px solid #d6d3d1;
+    padding-bottom: -1px;
+  }
+  /* line 285, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header nav > ul ul li {
+    height: 0;
+    overflow: hidden;
+    border: 0;
+  }
+  /* line 291, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header nav > ul ul:hover > li {
+    height: auto;
+    border-top: 1px solid #d6d3d1;
+    padding-top: -1px;
+  }
+  /* Second level items */
+  /* line 298, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header nav > ul > li > ul > li.active > a {
+    margin-left: -1.5em;
+  }
+  /* line 302, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header nav > ul > li > ul > li.active > a:before {
+    content: ">";
+    display: inline-block;
+    width: 1.5em;
+  }
+  /* line 308, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header nav > ul > li > ul > li a {
+    padding-left: 21px;
+  }
+  /* Third level items */
+  /* line 313, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header nav > ul > li > ul > li > ul > li a {
+    padding-left: 42px;
+  }
+  /* line 317, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .sub-menu ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin-top: 10.5px;
+  }
+  /* line 323, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .sub-menu li {
+    font-size: 12.75px;
+    font-weight: bold;
+    border-bottom: 1px solid #d6d3d1;
+    padding: 5.25px 0 4.25px;
+  }
+  /* line 329, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .sub-menu li:first-of-type {
+    border-top: 1px solid #d6d3d1;
+    padding-top: 4.25px;
+  }
+  /* line 335, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  nav.pagination {
+    margin-bottom: 21px;
+    font-size: 17px;
+    line-height: 31.5px;
+  }
+  /* line 341, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .pagination input {
+    text-align: center;
+  }
+  /* line 345, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .resource-list + .pagination {
+    border-color: transparent;
+  }
+  /* line 349, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .pagination form {
+    min-width: 63px;
+  }
+  /* line 353, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .pagination form,
+  .pagination .button,
+  .pagination button,
+  .pagination .page-count {
+    display: inline-block;
+    vertical-align: top;
+    height: 31.5px;
+  }
+  /* line 362, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .pagination .button {
+    border: 1px solid #d6d3d1;
+    background-color: #d6d3d1;
+    width: 31.5px;
+    text-align: center;
+    padding: 5.25px;
+    border-radius: 2px;
+    color: #a7a09a;
+    line-height: 21px;
+  }
+  /* line 372, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .pagination .button:hover {
+    background-color: #756d66;
+  }
+  /* line 377, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .pagination .inactive.button {
+    opacity: .5;
+    background-color: white;
+  }
+  /* line 381, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .pagination .inactive.button:hover {
+    background-color: white;
+  }
+  /* line 386, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .pagination form,
+  .pagination .last {
+    margin-right: 5.25px;
+  }
+  /* line 391, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .pagination input {
+    width: 42px;
+  }
+  /* line 395, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .breadcrumbs {
+    font-size: 12.75px;
+    margin: 21px 0 -10.5px;
+  }
+  /* @end */
+  /* @group ----- Header ----- */
+  /* line 404, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .site-title h1 {
+    font-size: 21.25px;
+    line-height: 21px;
+    padding-right: 21px;
+  }
+  /* line 410, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header {
+    margin: 0 0 52.5px;
+    background-color: #fff;
+    border-bottom: 1px solid #d6d3d1;
+    position: relative;
+  }
+  /* line 416, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  header > * {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.69492%;
+    display: block;
+  }
+  /* line 423, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .site-title:hover,
+  .site-title:active {
+    border-bottom: 0;
+  }
+  /* line 428, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .site-title h1 {
+    margin: 0;
+  }
+  /* line 432, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  button.o-icon-search {
+    display: none;
+  }
+  /* line 436, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  #search {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #d6d3d1;
+    border-top: 1px solid #d6d3d1;
+    padding: 5.25px 1.69492%;
+  }
+  /* line 447, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  #search form {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  /* line 452, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  #search form input[type="text"] {
+    width: 100%;
+  }
+  /* line 456, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  #search form button[type="submit"] {
+    height: 31.5px;
+    width: 31.5px;
+    text-indent: -9999px;
+    position: relative;
+    border-radius: 0 3px 3px 0;
+  }
+  /* line 463, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  #search form button[type="submit"]:before {
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-indent: 0;
+    line-height: 31.5px;
+  }
+  /* @end */
+  /* @group ----- Footer ----- */
+  /* line 480, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  footer {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.69492% 21px;
+  }
+  /* @end */
+  /* @group ----- Page and Blocks ----- */
+  /* line 489, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  #content {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.69492% 21px;
+  }
+  /* line 494, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .item-showcase {
+    margin: 21px 0;
+    border-top: 1px solid #d6d3d1;
+    border-bottom: 1px solid #d6d3d1;
+    padding: 20px 0 0;
+    overflow: hidden;
+    text-align: center;
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 506, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .item.resource .caption {
+    font-size: 12.75px;
+    line-height: 21px;
+  }
+  /* line 510, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .item.resource .caption * {
+    margin: 0 0 21px 0;
+  }
+  /* line 514, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .item.resource .caption > *:last-child {
+    margin-bottom: 0;
+  }
+  /* line 519, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .item-showcase .resource.item {
+    vertical-align: top;
+    margin-bottom: 21px;
+  }
+  /* line 523, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .item-showcase .resource.item img {
+    margin-right: 10.5px;
+  }
+  /* line 527, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .item-showcase .resource.item:only-child img {
+    margin: 0 auto;
+  }
+  /* line 531, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .item-showcase .resource.item:not(:only-child) {
+    width: 25%;
+    clear: none;
+    padding: 0 1.69492%;
+  }
+  /* line 537, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .item-showcase .resource.item:not(:only-child) h3 {
+    clear: left;
+    font-size: 12.75px;
+    line-height: 21px;
+    margin: 10.5px 0 0;
+  }
+  /* line 544, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .item-showcase .resource.item:not(:only-child) img {
+    max-height: 147px;
+    width: auto;
+    float: none;
+    margin-right: 0;
+    vertical-align: top;
+  }
+  /* line 553, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .right,
+  .left {
+    overflow: hidden;
+  }
+  /* line 558, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .left .item.resource,
+  .right .item.resource {
+    margin: 0 0 21px 0;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    max-width: 40vw;
+  }
+  /* line 566, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .left .item.resource:first-of-type,
+  .right .item.resource:first-of-type {
+    border-top: 1px solid #d6d3d1;
+    padding-top: 20px;
+    margin-top: 0;
+  }
+  /* line 572, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .left .item.resource:last-of-type,
+  .right .item.resource:last-of-type {
+    border-bottom: 1px solid #d6d3d1;
+    padding-bottom: 20px;
+  }
+  /* line 577, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .left .item.resource .media-render > *, .left .item.resource img,
+  .right .item.resource .media-render > *,
+  .right .item.resource img {
+    max-width: 40vw;
+  }
+  /* line 582, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .left:not(.file) .item.resource,
+  .right:not(.file) .item.resource {
+    max-width: 50%;
+  }
+  /* IE/Edge min-content alternative */
+  /* line 588, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .file {
+    display: -ms-grid;
+    -ms-grid-columns: min-content;
+  }
+  /* line 593, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .left.file,
+  .right.file {
+    max-width: 50%;
+  }
+  /* line 598, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .left.file {
+    float: left;
+    clear: left;
+  }
+  /* line 603, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .right.file {
+    float: right;
+    clear: right;
+  }
+  /* line 608, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .left .item.resource {
+    float: left;
+    margin-right: 21px;
+    clear: left;
+  }
+  /* line 614, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .right .item.resource {
+    float: right;
+    margin-left: 21px;
+    clear: right;
+  }
+  /* line 620, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .left .item.resource > a:first-child,
+  .right .item.resource > a:first-child {
+    vertical-align: top;
+  }
+  /* line 625, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .medium .item.resource > h3,
+  .square .item.resource > h3 {
+    font-size: 17px;
+    line-height: 21px;
+  }
+  /* line 631, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .left .item.resource > h3,
+  .right .item.resource > h3 {
+    margin: 0;
+  }
+  /* line 636, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .left .item.resource + p,
+  .right .item.resource + p {
+    margin-top: 0;
+  }
+  /* line 641, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .break {
+    width: 100%;
+    clear: both;
+    border-bottom: 1px solid #d6d3d1;
+    padding-bottom: -1px;
+    margin: 21px 0;
+  }
+  /* line 648, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .break.transparent {
+    border-color: transparent;
+  }
+  /* line 652, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .break.opaque {
+    border-color: #d6d3d1;
+  }
+  /* line 657, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .preview-block {
+    margin: 21px 0;
+    overflow: hidden;
+  }
+  /* line 662, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .resource-list.preview + a {
+    background-color: #d6d3d1;
+    text-align: center;
+    padding: 5.25px;
+    border-radius: 2px;
+    line-height: 21px;
+    display: inline-block;
+    font-weight: bold;
+  }
+  /* line 671, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .resource-list.preview + a:hover {
+    background-color: #756d66;
+    border-bottom-width: 0px;
+    color: #fff;
+  }
+  /* line 678, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .toc-block > ul {
+    margin: 21px 0;
+    list-style-type: none;
+    border-left: 5px solid #a7a09a;
+  }
+  /* line 684, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .toc-block > ul > li {
+    margin-bottom: 10.5px;
+  }
+  /* line 688, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .toc-block > ul > li > a {
+    font-weight: bold;
+  }
+  /* line 692, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .toc-block ul ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 697, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .toc-block ul ul ul {
+    padding-left: 1.25em;
+  }
+  /* line 701, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .toc-block ul ul li:before {
+    content: "\2014";
+    color: #d6d3d1;
+  }
+  /* line 706, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .item-with-metadata .show.resource {
+    margin: 42px 0;
+  }
+  /* line 710, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .site-page-pagination {
+    margin-top: 42px;
+    clear: both;
+  }
+  /* line 715, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .site-page-pagination a {
+    background-color: #d6d3d1;
+    border-radius: 2px;
+    padding: 5.25px;
+    display: inline-block;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0;
+    cursor: pointer;
+  }
+  /* line 728, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .list-of-sites .site-list .site {
+    margin-bottom: 10.5px;
+  }
+  /* line 732, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .list-of-sites .site-list .site-link {
+    display: inline-block;
+    font-size: 21.25px;
+    margin-bottom: 5.25px;
+  }
+  /* line 738, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .list-of-sites .site-list .site-summary {
+    margin: 0 0 0 10.5px;
+    line-height: 20px;
+  }
+  /* @end */
+  /* @group ----- Resource List ----- */
+  /* line 748, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  ul.resource-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* line 753, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  ul.resource-list .resource {
+    border-bottom: 1px solid #d6d3d1;
+    padding-bottom: 4.25px;
+    margin: 5.25px 0;
+    overflow: hidden;
+    position: relative;
+  }
+  /* line 762, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  ul.resource-list .resource > *:last-child {
+    margin-bottom: 0;
+  }
+  /* line 766, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  ul.resource-list .resource:first-child {
+    border-top: 1px solid #d6d3d1;
+    padding-top: 20px;
+  }
+  /* line 772, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  ul.resource-list .resource img {
+    height: auto;
+    width: 42px;
+    float: right;
+    margin-left: 10.5px;
+  }
+  /* line 779, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  ul.resource-list .resource h4 {
+    margin-top: 0;
+  }
+  /* line 783, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  ul.resource-list .resource .description {
+    max-height: 63px;
+    overflow: hidden;
+    position: relative;
+  }
+  /* line 788, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  ul.resource-list .resource .description:after {
+    content: "";
+    position: absolute;
+    top: 36.75px;
+    left: 0;
+    right: 0;
+    height: 26.25px;
+    background: linear-gradient(to top, #f8f8f8, rgba(248, 248, 248, 0));
+  }
+  /* line 799, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  ul.resource-list .resource img ~ * {
+    width: calc(100% - 52.5px);
+  }
+  /* @end */
+  /* @group ----- Browse ---- */
+  /* line 807, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .search-filters {
+    margin-bottom: 21px;
+  }
+  /* line 811, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .filter-label,
+  .filter-value {
+    display: inline-block;
+    border: 1px solid #d6d3d1;
+    padding: 4.25px;
+  }
+  /* line 818, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .filter-label {
+    background-color: #d6d3d1;
+  }
+  /* line 822, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .filter-value {
+    margin-left: -5px;
+  }
+  /* line 826, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .browse-controls {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  /* line 832, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .advanced-search {
+    line-height: 31.5px;
+  }
+  /* @end */
+  /* @group ----- Show ----- */
+  /* line 840, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  body.resource #content > h2:first-of-type + h3 {
+    font-size: 12.75px;
+    text-transform: uppercase;
+    margin: -21px 0 21px;
+  }
+  /* line 851, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .property h4 {
+    margin-bottom: 0;
+    font-size: 12.75px;
+  }
+  /* line 856, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .resource-link img {
+    width: auto;
+    height: 31.5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5.25px;
+  }
+  /* line 864, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .property .value a {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  /* line 869, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .property .value:not(:last-child) img {
+    margin-bottom: 5.25px;
+  }
+  /* line 873, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .property .value:not(:last-child) img + a {
+    margin-bottom: 5.25px;
+  }
+  /* line 877, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .property .value .language {
+    background-color: #cbc6c3;
+    padding: 2.625px;
+    font-size: 8.5px;
+  }
+  /* line 883, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  #content .media.resource {
+    display: inline-block;
+    text-align: center;
+    vertical-align: bottom;
+    margin-right: 5.25px;
+  }
+  /* line 889, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  #content .media.resource:hover {
+    border-bottom: 0;
+  }
+  /* line 894, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  #content .media.resource img {
+    vertical-align: top;
+    margin-bottom: 10.5px;
+  }
+  /* line 899, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .media-render > * {
+    max-width: 100%;
+  }
+  /* line 903, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  #linked-resources caption {
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 3px solid #a7a09a;
+    padding: 5.25px 10.5px 2.25px;
+  }
+  /* line 910, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  #linked-filter h4 {
+    margin-bottom: 10.5px;
+  }
+  /* line 914, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  #linked-resources .resource-link {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+  /* @end */
+  /* @group ----- Advanced Search ----- */
+  /* line 924, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  #advanced-search .value:not(:last-child) {
+    margin-bottom: 10.5px;
+  }
+  /* line 928, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .remove-value {
+    text-indent: -9999px;
+    position: relative;
+    width: 31.5px;
+    margin-left: 5.25px;
+  }
+  /* line 934, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  .remove-value:before {
+    text-indent: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    line-height: 31.5px;
+  }
+  /* @end */
+  /* @group ----- Common Modules ---- */
+  /* line 949, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_screen.scss */
+  a.metadata-browse-link {
+    font-size: 12.75px;
+  }
+  /* @end */
+}
+
+@media screen and (min-width: 800px) {
+  /* line 3, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  body {
+    background-color: #a7a09a;
+    margin: 5.25px auto;
+  }
+  /* line 10, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  #canvas {
+    width: 60%;
+    background-color: #EAE7D8;
+    float: right;
+  }
+  /* line 18, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  #cdash_map {
+    width: 40%;
+    background-color: #EAE7D8;
+    float: left;
+  }
+  /* line 26, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  #content {
+    padding: 0 3.38983% 21px;
+  }
+  /* line 32, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  p {
+    display: block;
+    margin-block-start: 10.5px;
+    margin-block-end: 10.5px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  /* line 40, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  table {
+    margin: 21px 0;
+    border-collapse: collapse;
+  }
+  /* line 45, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  th,
+  td {
+    text-align: left;
+    padding: 5.25px 10.5px;
+    padding-bottom: 4.25px;
+    border-bottom: 1px solid #a7a09a;
+  }
+  /* @group ----- Header ----- */
+  /* line 55, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header {
+    position: relative;
+    margin-bottom: 42px;
+    background-color: #EAE7D8;
+  }
+  /* line 62, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header > * {
+    padding: 0 0 0 0;
+  }
+  /* line 67, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header > h1 {
+    padding: 0 0 0 0;
+  }
+  /* @end */
+  /* @group ----- Footer ----- */
+  /* line 76, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  footer {
+    padding: 0 3.38983% 21px;
+  }
+  /* @end */
+  /* @group ----- Navigation ----- */
+  /* line 84, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header nav {
+    margin: 0 auto;
+    position: static;
+    padding: 0 3.38983%;
+  }
+  /* line 90, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header nav:before {
+    content: "";
+    border: 0;
+    display: none;
+  }
+  /* line 96, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header nav ul a {
+    padding: 0;
+  }
+  /* line 100, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header nav ul li {
+    position: static;
+  }
+  /* line 105, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header nav.closed ul,
+  header nav ul ul li {
+    height: auto;
+    overflow: visible;
+  }
+  /* line 114, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header nav ul a:hover {
+    background-color: transparent;
+  }
+  /* line 118, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header nav ul li,
+  header nav > ul li:last-child,
+  header nav > ul ul:hover > li {
+    border: 0;
+  }
+  /* line 124, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header nav ul.navigation {
+    margin-left: -5.25px;
+    position: static;
+    display: flex;
+    align-items: flex-end;
+  }
+  /* line 130, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header nav ul.navigation li ul:before {
+    display: none;
+  }
+  /* line 134, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header nav ul.navigation > li:not(:last-child) {
+    margin-right: 10.5px;
+  }
+  /* line 138, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header nav ul.navigation > li > ul {
+    position: absolute;
+    top: 100%;
+    left: -9999px;
+    background-color: #fff;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    padding: 9.5px 0 4.25px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    z-index: 1;
+  }
+  /* line 153, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header nav ul.navigation > li:hover > ul {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10.5px 3.38983%;
+    left: 0;
+    right: 0;
+    border-bottom: 0;
+    border-color: #d6d3d1;
+  }
+  /* line 161, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header nav ul.navigation > li:hover > ul:after {
+    content: "";
+    left: -9999px;
+    right: -9999px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-bottom: 1px solid #d6d3d1;
+    border-top: 1px solid #d6d3d1;
+    z-index: -1;
+  }
+  /* line 175, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header nav ul.navigation > li > ul > li {
+    width: 25%;
+    font-size: 12.75px;
+    font-weight: bold;
+    padding-bottom: 21px;
+  }
+  /* line 182, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header nav ul.navigation > li > ul > li ul {
+    font-weight: normal;
+    padding: 0;
+    list-style-type: none;
+    height: auto;
+  }
+  /* line 190, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header nav > ul > li > a {
+    margin: 5.25px;
+  }
+  /* All top-level nav items with siblings are parent items and get an arrow. */
+  /* line 195, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header nav > ul > li > a:not(:only-child):after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    display: inline-block;
+    margin-left: 5.25px;
+  }
+  /* line 202, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header nav > ul li:hover ul li {
+    height: auto;
+    padding: 0;
+  }
+  /* Second and Third level items */
+  /* line 208, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  header nav > ul > li > ul > li a,
+  header nav > ul > li > ul > li > ul > li a {
+    padding-left: 0;
+  }
+  /* line 213, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  .sub-menu ul {
+    border-bottom: 1px solid #d6d3d1;
+    padding-bottom: 9.5px;
+  }
+  /* line 218, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  .sub-menu li {
+    display: inline-block;
+    border: 0;
+    padding: 0;
+    margin-right: 10.5px;
+  }
+  /* line 224, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  .sub-menu li:first-of-type {
+    border: 0;
+    padding: 0;
+  }
+  /* line 230, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  #search {
+    display: inline-block;
+    left: 75%;
+    width: 25%;
+    border: 0;
+    padding: 0 3.38983% 21px;
+    background-color: #EAE7D8;
+    margin-right: auto;
+  }
+  /* line 252, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  #search form input[type="text"],
+  #search form button[type="submit"] {
+    height: 21px;
+    font-size: 12.75px;
+    line-height: 21px;
+  }
+  /* line 259, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  #search form button[type="submit"] {
+    width: 21px;
+    height: 21px;
+    padding: 0;
+  }
+  /* line 264, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  #search form button[type="submit"]:before {
+    line-height: 21px;
+  }
+  /* @end */
+  /* @group ----- Resource List ----- */
+  /* line 273, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  ul.resource-list .resource img {
+    width: 84px;
+    height: auto;
+    float: right;
+    margin-left: 10.5px;
+  }
+  /* line 280, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  ul.resource-list .resource img ~ * {
+    width: calc(100% - 94.5px);
+  }
+  /* @end */
+  /* @group ----- Item Set ----- */
+  /* line 288, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  body.item-set.item #content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  /* line 294, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  body.item-set.item #content > h2,
+  body.item-set.item #content > h3 {
+    width: 100%;
+  }
+  /* line 300, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  body.item-set .metadata {
+    width: 32.20339%;
+    border-left: 5px solid #d6d3d1;
+    padding-left: 1.69492%;
+    margin-right: 1.69492%;
+  }
+  /* line 307, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  body.item-set .metadata h4:first-of-type {
+    margin-top: 0;
+  }
+  /* line 311, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  body.item-set #content .metadata ~ * {
+    width: 66.10169%;
+    border-left: 1px solid #d6d3d1;
+    padding-left: 1.69492%;
+  }
+  /* line 317, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  body.item-set .item-set-items h3 {
+    margin-top: 0;
+  }
+  /* line 321, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  body.item-set .metadata ~ nav.pagination:first-of-type {
+    margin-bottom: 0;
+  }
+  /* @end */
+  /* @group ----- Page and blocks ----- */
+  /* line 330, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  .preview-block {
+    clear: both;
+  }
+  /* line 334, F:/current_work/projects/cambridge/chc_omeka/cdash_dev/chc_omeka_files/themes/cdash_split/asset/sass/backup_20200812/_desktop.scss */
+  ul.preview.resource-list li:first-of-type {
+    border-top: 1px solid #d6d3d1;
+    padding-top: 20px;
+  }
+  /* @end */
+}
+
+/*# sourceMappingURL=style.css.map */

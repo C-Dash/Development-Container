@@ -1,0 +1,109 @@
+<?php
+$escape = $this->plugin('escapeHtml');
+$siteTitle = $site->title();
+$this->htmlElement('html')->setAttribute('lang', $this->lang());
+$this->headMeta()->setCharset('utf-8');
+$this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1');
+$this->headTitle($siteTitle)->setSeparator(' · ');
+$this->headTitle()->append($this->setting('installation_title', 'Omeka S'));
+$this->headLink()->prependStylesheet($this->assetUrl('css/style.css'));
+$this->headLink()->prependStylesheet($this->assetUrl('css/iconfonts.css', 'Omeka'));
+$this->headLink()->prependStylesheet('//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700italic,700');
+$this->headScript()->prependFile($this->assetUrl('js/default.js'));
+$this->headScript()->prependFile($this->assetUrl('js/global.js', 'Omeka'));
+$this->headScript()->prependFile($this->assetUrl('vendor/jquery/jquery.min.js', 'Omeka'));
+$this->trigger('view.layout');
+$userBar = $this->userBar();
+
+//For the cdash-map addition
+
+$this->headLink()->appendStylesheet($this->assetUrl('vendor/leaflet/leaflet.css', 'Mapping'));
+$this->headScript()->appendFile($this->assetUrl('vendor/leaflet/leaflet.js', 'Mapping'));
+$this->headLink()->appendStylesheet($this->assetUrl('vendor/leaflet.markercluster/MarkerCluster.css', 'Mapping'));
+$this->headLink()->appendStylesheet($this->assetUrl('vendor/leaflet.markercluster/MarkerCluster.Default.css', 'Mapping'));
+$this->headScript()->appendFile($this->assetUrl('vendor/leaflet.markercluster/leaflet.markercluster-src.js', 'Mapping'));
+$this->headScript()->appendFile($this->assetUrl('vendor/leaflet.providers/leaflet-providers.js', 'Mapping'));
+$this->headScript()->appendFile($this->assetUrl('vendor/leaflet.providers/leaflet-providers.js', 'Mapping'));
+$this->headScript()->appendFile($this->assetUrl('js/control.fit-bounds.js', 'Mapping'));
+$this->headScript()->appendFile($this->assetUrl('vendor/esri-leaflet/esri-leaflet.js'));
+$this->headScript()->appendFile($this->assetUrl('vendor/leaflet.ajax.js'));
+//$this->headScript()->appendFile($this->assetUrl('js/cdash-map.js', 'Mapping'));
+//$this->headScript()->appendFile($this->assetUrl('js/advanced-search.js', 'Omeka'));
+
+
+
+
+?>
+<?php echo $this->doctype(); ?>
+<?php echo $this->htmlElement('html'); ?>
+    <head>
+        <?php echo $this->headMeta(); ?>
+        <?php echo $this->headTitle(); ?>
+        <?php echo $this->headLink(); ?>
+        <?php echo $this->headStyle(); ?>
+        <?php echo $this->headScript(); ?>
+    </head>
+
+    <?php echo $this->htmlElement('body'); ?>
+
+    <container>
+    <div id="canvas">
+
+    <?php echo $userBar; ?>
+        <header>
+            <h1>
+                <a href="<?php echo $site->url(); ?>" class="site-title">
+                <?php if ($this->themeSetting('logo')): ?>
+                    <img src="<?php echo $this->themeSettingAssetUrl('logo'); ?>" alt="<?php echo $escape($siteTitle); ?>" />
+                <?php else: ?>
+                    <?php echo $escape($siteTitle); ?>
+                <?php endif; ?>
+                </a>
+            </h1>
+            </header>
+            <div id="menubar">
+              <nav>
+              <?php
+              echo $site->publicNav()->menu()->renderMenu(null, [
+                'maxDepth' => $this->themeSetting('nav_depth') - 1
+               ]);
+              ?>
+              </nav>
+
+              <div id="search">
+                    <?php echo $this->partial('common/search-form'); ?>
+                </div> 
+              </div>  <!-- closes menu bar -->
+              
+
+ 
+
+
+    <div id="cdash_map">
+        <?php 
+           $webroot = $_SERVER['DOCUMENT_ROOT'];
+           //$cdash_map_resources = $webroot . "/chc_omeka_files/jq_ajax/";
+           //$cdash_map_php = $cdash_map_resources . "headless_dummy.php";
+           $cdash_map_php = $webroot . "/omeka-s/themes/cdash_split/view/omeka/site/index/cdash-map.phtml";
+           //$cdash_map_php =  $this->assetUrl('phtml/cdash-map.phtml') ;
+           //echo $cdash_map_php;
+           include $cdash_map_php;
+          ?>
+        </div> <!-- close map div --> 
+
+        <div id="content" role="main">
+            <?php echo $this->content; ?>
+        </div> 
+        <div id="footer">
+          <footer>
+              <?php if ($footerContent = $this->themeSetting('footer')): ?>
+              <?php echo $footerContent; ?>
+              <?php else: ?>
+                <?php echo $this->translate('Powered by Omeka S Hi!!'); ?>
+            <?php endif; ?>
+          </footer>
+        </div>
+    </div>  <!-- closes canvas div -->
+    </container>
+    </body>
+</html>

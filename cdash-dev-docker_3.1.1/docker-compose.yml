@@ -1,0 +1,57 @@
+version: "3.2"
+
+services:
+
+  mariadb:
+    image: mariadb:10.3.21
+    restart: always
+    networks:
+      - network1
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+    environment:
+      MYSQL_ROOT_PASSWORD: blabla 
+      MYSQL_DATABASE: omeka
+      MYSQL_USER: omeka
+      MYSQL_PASSWORD: omeka
+      explicit_defaults_for_timestamp: 1
+
+  adminer:        # Database management tool for MariaDB
+    image: adminer
+    restart: always
+    networks:
+      - network1 
+    ports:
+      - 8080:8080
+    environment:
+      ADMINER_DEFAULT_DB_DRIVER: mysql
+      ADMINER_DEFAULT_DB_HOST: mariadb
+
+  omeka:          # This is the main web server for Omeka.  
+    depends_on:
+      - mariadb
+    image: cdash-omeka-dev-3.1.1
+    restart: always
+    networks:
+      - network1 
+    ports:
+      - "80:80"
+    links:
+      - mariadb:db
+    volumes:
+      - type: bind
+        # the following path shuld point to your 'persist' folder.
+        source: f:\current_work\projects\cdash\cdash-dev-3.1.1\cdash-persist
+        target: /var/www/html/cdash-persist
+      - type: bind
+        # the following path shuld point to your 'php-tut' folder.
+        # if you want to use your Omeka machine to do tutorials. 
+        source: f:\current_work\projects\cdash\php-tut
+        target: /var/www/html/php-tut
+
+volumes:
+  mysql-data:
+
+networks:
+  network1:  

@@ -1,0 +1,7 @@
+user     = "omeka@chcmariadb"
+password = "chc_omekapw*"
+dbname   = "omeka"
+host     = "chcmariadb.mariadb.database.azure.com"
+;port     =
+;unix_socket =
+;log_path =

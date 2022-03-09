@@ -1,0 +1,191 @@
+{
+    "o:label": "CHC_Building",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": "Building Name",
+            "o:alternate_comment": "The name of the building.  If unknown, use the street address.  ",
+            "o:is_required": true,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "title",
+            "label": "Title"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "description",
+            "label": "Description"
+        },
+        {
+            "o:alternate_label": "Architect",
+            "o:alternate_comment": "Choose an architect from Getty Names, if you can, or enter one if you have to. ",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "valuesuggest:getty:ulan",
+            "data_type_label": "Getty: The Union List of Artist Names (ULAN)",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "creator",
+            "label": "Creator"
+        },
+        {
+            "o:alternate_label": "Place",
+            "o:alternate_comment": "Enter the neighborhood.  Pick gotm GeoNames if you can. ",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "valuesuggest:geonames:geonames",
+            "data_type_label": "Geonames: The GeoNames geographical database",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "spatial",
+            "label": "Spatial Coverage"
+        },
+        {
+            "o:alternate_label": "Subject\/s",
+            "o:alternate_comment": "Library of Congress Terms",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "valuesuggest:lc:subjects",
+            "data_type_label": "LC: Subject Headings",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "subject",
+            "label": "Subject"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/c-dash5.azurewebsites.net\/omeka-s\/ns\/cdash\/",
+            "vocabulary_label": "CDASH Custom Terms",
+            "local_name": "mapLotBld",
+            "label": "Assessing Map-Lot-Bld"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "valuesuggest:getty:aat",
+            "data_type_label": "Getty: The Art & Architecture Thesaurus (AAT)",
+            "vocabulary_namespace_uri": "http:\/\/c-dash5.azurewebsites.net\/omeka-s\/ns\/cdash\/",
+            "vocabulary_label": "CDASH Custom Terms",
+            "local_name": "bldgStyle",
+            "label": "Building Style\/s"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "valuesuggest:getty:aat",
+            "data_type_label": "Getty: The Art & Architecture Thesaurus (AAT)",
+            "vocabulary_namespace_uri": "http:\/\/c-dash5.azurewebsites.net\/omeka-s\/ns\/cdash\/",
+            "vocabulary_label": "CDASH Custom Terms",
+            "local_name": "bldgUse",
+            "label": "Building Use\/s"
+        },
+        {
+            "o:alternate_label": "Building Material\/s",
+            "o:alternate_comment": "Select one or more building materials from the Getty AAT if possible.  ",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "valuesuggest:getty:aat",
+            "data_type_label": "Getty: The Art & Architecture Thesaurus (AAT)",
+            "vocabulary_namespace_uri": "http:\/\/c-dash5.azurewebsites.net\/omeka-s\/ns\/cdash\/",
+            "vocabulary_label": "CDASH Custom Terms",
+            "local_name": "bldgMaterial",
+            "label": "Building Material"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/c-dash5.azurewebsites.net\/omeka-s\/ns\/cdash\/",
+            "vocabulary_label": "CDASH Custom Terms",
+            "local_name": "dateErected",
+            "label": "Date Erected"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/c-dash5.azurewebsites.net\/omeka-s\/ns\/cdash\/",
+            "vocabulary_label": "CDASH Custom Terms",
+            "local_name": "dateRemoved",
+            "label": "Date Removed"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/c-dash5.azurewebsites.net\/omeka-s\/ns\/cdash\/",
+            "vocabulary_label": "CDASH Custom Terms",
+            "local_name": "dateRenovated",
+            "label": "Date Renovated"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/c-dash5.azurewebsites.net\/omeka-s\/ns\/cdash\/",
+            "vocabulary_label": "CDASH Custom Terms",
+            "local_name": "designations",
+            "label": "Historical Designation\/s"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/c-dash5.azurewebsites.net\/omeka-s\/ns\/cdash\/",
+            "vocabulary_label": "CDASH Custom Terms",
+            "local_name": "macrisID",
+            "label": "MACRIS Inventory Number"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/c-dash5.azurewebsites.net\/omeka-s\/ns\/cdash\/",
+            "vocabulary_label": "CDASH Custom Terms",
+            "local_name": "streetAddress",
+            "label": "CDASH Address"
+        }
+    ],
+    "o:resource_class": {
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/dcmitype\/",
+        "vocabulary_label": "Dublin Core Type",
+        "local_name": "PhysicalObject",
+        "label": "Physical Object"
+    }
+}

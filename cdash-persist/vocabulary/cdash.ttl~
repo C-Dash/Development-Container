@@ -1,0 +1,103 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix o: <http://omeka.org/s/vocabs/o#> .
+@prefix cdash: <http://c-dash5.azurewebsites.net/omeka-s/ns/cdash/> .
+@prefix aat: <http://vocab.getty.edu/aat/> .
+
+<http://c-dash5.azurewebsites.net/omeka-s/ns/cdash/> a owl:Ontology ;
+    dcterms:title "Cambridge Historical Commission Terms" ;
+    dcterms:description "Terms for rel;ating Buildings to Documents and People. See http://mhc-macris.net" .
+
+cdash:macrisID a rdf:Property ;
+    rdfs:isDefinedBy <http://mhc-macris.net/Details.aspx?MhcId=>;
+    rdfs:label "MACRIS Inventory Number" ;
+    rdfs:comment "See http://mhc-macris.net" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+    
+cdash:bldgStyle a rdf:Property ;
+    rdfs:label "Building Style/s" ;
+    rdfs:comment "Choose from http://www.getty.edu/research/tools/vocabularies/aat" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:bldgUse a rdf:Property ;
+    rdfs:label "Building Use/s" ;
+    rdfs:comment "Choose from http://www.getty.edu/research/tools/vocabularies/aat" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+        
+cdash:bldgMaterial a rdf:Property ;
+    rdfs:label "Building Material" ;
+    rdfs:comment "Building Material from the Getty AAT.  " ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:mapLotBld a rdf:Property ;
+    rdfs:label "Assessing Map-Lot-Bld" ;
+    rdfs:comment "Choose from https://www.cambridgema.gov/propertydatabase.  Just Map-Lot is sufficient." ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:gisBldg a rdf:Property ;
+    rdfs:label "GIS Building ID" ;
+    rdfs:comment "Can be looked up at https://gis.cambridgema.gov/map" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+    
+cdash:hisdDist a rdf:Property ;
+    rdfs:label "Cambridge Historic Distrinct" ;
+    rdfs:comment "Can be looked up at https://gis.cambridgema.gov/map" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:designations a rdf:Property ;
+    rdfs:label "Historical Designation/s" ;
+    rdfs:comment "example: Nat'l Register Individual Property (04/13/1982)" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+    
+cdash:dateErected a rdf:Property ;
+    rdfs:label "Date Erected" ;
+    rdfs:comment "YYYY-MM-DD format or just YYYY" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+    
+cdash:dateRenovated a rdf:Property ;
+    rdfs:label "Date Renovated" ;
+    rdfs:comment "YYYY-MM-DD format or just YYYY" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:dateRemoved a rdf:Property ;
+    rdfs:label "Date Removed" ;
+    rdfs:comment "YYYY-MM-DD format or just YYYY" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:streetAddress a rdf:Property ;
+    rdfs:label "CDASH Address" ;
+    rdfs:comment "See https://schema.org/streetAddress" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:personItem a rdf:Property ;
+    rdfs:label "CDASH Person" ;
+    rdfs:comment "Select a CDASH Person item associated with this object. " ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+    
+cdash:buildingItem a rdf:Property ;
+    rdfs:label "CDASH Building" ;
+    rdfs:comment "Select a CDASH Building associated with this object.  " ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:cdashID a rdf:Property ;
+    rdfs:label "CDASH Identifier" ;
+    rdfs:comment "A unique identifier for CDash scans and items. " ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .

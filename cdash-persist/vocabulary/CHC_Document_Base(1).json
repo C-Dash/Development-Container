@@ -1,0 +1,203 @@
+{
+    "o:label": "CHC Document Base",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "valuesuggest:lc:genreForms",
+            "data_type_label": "LC: Genre\/Form Terms",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "type",
+            "label": "Type"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "Every item has this CDash assigned title: Street Address: Document Type.",
+            "o:is_required": true,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "title",
+            "label": "Title"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "If you have a resource that has a title, for example a magazine article, enter the title here. ",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "alternative",
+            "label": "Alternative Title"
+        },
+        {
+            "o:alternate_label": "Subject_AAT",
+            "o:alternate_comment": "Select a subject tag from the Getty Art and Architecture Thesaurus",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "valuesuggest:lc:subjects",
+            "data_type_label": "LC: Subject Headings",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "subject",
+            "label": "Subject"
+        },
+        {
+            "o:alternate_label": "Author, photographer, artist.",
+            "o:alternate_comment": "This would be the Photographer, Writer, etc.  Pick name frmo LC Name Authority if possible. ",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "valuesuggest:lc:names",
+            "data_type_label": "LC: Name Authority File",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "creator",
+            "label": "Creator"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "Approximate date for the creation or issue of the resource.  YYY-MM-DD or YYYY",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "date",
+            "label": "Date"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "description",
+            "label": "Description"
+        },
+        {
+            "o:alternate_label": "Place",
+            "o:alternate_comment": "The neighborhood name. Choose frm GeoNames if you can. ",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "valuesuggest:getty:ulan",
+            "data_type_label": "Getty: The Union List of Artist Names (ULAN)",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "spatial",
+            "label": "Spatial Coverage"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "Co-Creator or Recipient.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "valuesuggest:lc:names",
+            "data_type_label": "LC: Name Authority File",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "contributor",
+            "label": "Contributor"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "publisher",
+            "label": "Publisher"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "rights",
+            "label": "Rights"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "rightsHolder",
+            "label": "Rights Holder"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "resource:item",
+            "data_type_label": "Item",
+            "vocabulary_namespace_uri": "http:\/\/c-dash5.azurewebsites.net\/omeka-s\/ns\/cdash\/",
+            "vocabulary_label": "CDASH",
+            "local_name": "buildingItem",
+            "label": "CDASH Building"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "resource:item",
+            "data_type_label": "Item",
+            "vocabulary_namespace_uri": "http:\/\/c-dash5.azurewebsites.net\/omeka-s\/ns\/cdash\/",
+            "vocabulary_label": "CDASH",
+            "local_name": "personItem",
+            "label": "CDASH Person"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "resource:item",
+            "data_type_label": "Item",
+            "vocabulary_namespace_uri": "http:\/\/c-dash5.azurewebsites.net\/omeka-s\/ns\/cdash\/",
+            "vocabulary_label": "CDASH",
+            "local_name": "streetAddress",
+            "label": "CDASH Address"
+        },
+        {
+            "o:alternate_label": "CDASH Identifier",
+            "o:alternate_comment": "The unique item name assigned by CDASH.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "identifier",
+            "label": "Identifier"
+        }
+    ],
+    "o:resource_class": {
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/dcmitype\/",
+        "vocabulary_label": "Dublin Core Type",
+        "local_name": "Text",
+        "label": "Text"
+    }
+}

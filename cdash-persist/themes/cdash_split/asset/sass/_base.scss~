@@ -1,0 +1,38 @@
+// Susy
+
+
+
+$susy: (
+    columns:                            susy-repeat(12),
+    container:                          1184px,
+    global-box-sizing:                  border-box
+);
+
+// Colors
+//$gray:                                  #ababab;
+
+$gray:                                  #a7a09a;
+$bold:                                  darken($gray, 20%);
+$light:                                 lighten($gray, 20%);
+$bg:                                    lighten($gray, 30%);
+$link:                                  #920b0b;
+$page:                                  #EAE7D8;
+
+// Typography
+
+$base-font-size:                        15px; //20px;
+$base-line-height:                      20px; //30px;
+
+// Units
+
+$spacing-s:                             .25 * $base-line-height;
+$spacing-m:                             .5 * $base-line-height;
+$spacing-l:                             $base-line-height;
+
+// Mixins
+
+@mixin container {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}

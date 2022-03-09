@@ -1,0 +1,107 @@
+{
+    "o:label": "CHC Address",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "This is going to be just the Address.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "title",
+            "label": "Title"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "If one date is given, it is the end date.  YYYY-MM-DD",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "date",
+            "label": "Date"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "description",
+            "label": "Description"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "The neighborhood.  Try to pick one form GeoNames if you can. ",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "valuesuggest:geonames:geonames",
+            "data_type_label": "Geonames: The GeoNames geographical database",
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "spatial",
+            "label": "Spatial Coverage"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/c-dash5.azurewebsites.net\/omeka-s\/ns\/cdash\/",
+            "vocabulary_label": "CDASH Custom Terms",
+            "local_name": "mapLotBld",
+            "label": "Assessing Map-Lot-Bld"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "Links to the CDASH Address item.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "resource:item",
+            "data_type_label": "Item",
+            "vocabulary_namespace_uri": "http:\/\/c-dash5.azurewebsites.net\/omeka-s\/ns\/cdash\/",
+            "vocabulary_label": "CDASH Custom Terms",
+            "local_name": "streetAddress",
+            "label": "CDASH Address"
+        },
+        {
+            "o:alternate_label": "CDASH Person\/s",
+            "o:alternate_comment": "Links to the CDASH Person item for people associated with this address. ",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "resource:item",
+            "data_type_label": "Item",
+            "vocabulary_namespace_uri": "http:\/\/c-dash5.azurewebsites.net\/omeka-s\/ns\/cdash\/",
+            "vocabulary_label": "CDASH Custom Terms",
+            "local_name": "personItem",
+            "label": "CDASH Person"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "Links to an associated  C-DASH Building item.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": "resource:item",
+            "data_type_label": "Item",
+            "vocabulary_namespace_uri": "http:\/\/c-dash5.azurewebsites.net\/omeka-s\/ns\/cdash\/",
+            "vocabulary_label": "CDASH Custom Terms",
+            "local_name": "buildingItem",
+            "label": "CDASH Building"
+        }
+    ],
+    "o:resource_class": {
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/dcmitype\/",
+        "vocabulary_label": "Dublin Core Type",
+        "local_name": "Collection",
+        "label": "Collection"
+    }
+}

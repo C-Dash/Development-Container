@@ -1,0 +1,7 @@
+user     = "omeka@chcmysql"
+password = "chc_omekapw*"
+dbname   = "omeka"
+host     = "chcmariadb.mysql.database.azure.com"
+;port     =
+;unix_socket =
+;log_path =

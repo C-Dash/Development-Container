@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "X_base.css",
+	"sources": [
+		"../sass/X_base.scss"
+	],
+	"sourcesContent": [
+		"// Susy\n\n\n\n$susy: (\n    columns:                            susy-repeat(12),\n    container:                          1184px,\n    global-box-sizing:                  border-box\n);\n\n// Colors\n//$gray:                                  #ababab;\n\n$gray:                                  #a7a09a;\n$bold:                                  darken($gray, 20%);\n$light:                                 lighten($gray, 20%);\n$bg:                                    lighten($gray, 30%);\n$link:                                  #920b0b;\n$page:                                  #EAE7D8;\n\n// Typography\n\n$base-font-size:                        20px;\n$base-line-height:                      30px;\n\n// Units\n\n$spacing-s:                             .25 * $base-line-height;\n$spacing-m:                             .5 * $base-line-height;\n$spacing-l:                             $base-line-height;\n\n// Mixins\n\n@mixin container {\n    max-width: 1180px;\n    margin-left: auto;\n    margin-right: auto;\n}\n"
+	],
+	"names": [],
+	"mappings": ""
+}
