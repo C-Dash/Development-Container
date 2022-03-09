@@ -1,6 +1,6 @@
 # CDASH Development-Container
 
-C-Dash is the Cambridge Digital Architctural Survey and History archive tool.
+C-Dash is the Cambridge Digital Architectural Survey and History archive tool.
 
 See it in action with some overview documentation with the [Phase 2 demonstration](https://chcomeka.azurewebsites.net/omeka-s/s/cdash/page/home) hosted on Azure. 
 
