@@ -1,0 +1,159 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix o: <http://omeka.org/s/vocabs/o#> .
+@prefix cdash: <http://github.com/C-Dash/ns/cdash-terms/> .
+
+## This file was originally created by the Custom Ontology module for Omeka.
+## Subsequently it has been edited with a txt editor and imported using 
+## the standard Omeka vocabulary import function. 
+
+<http://github.com/c-dash/ns/cdash/> a owl:Ontology ;
+    dcterms:title "CDASH Terms" ;
+    dcterms:description "Terms for places and related resources" .
+
+## Special properties to describe a Place.
+
+# placeType has a custom picklist in CDASH  There are 7 basic place-types, including Building.
+cdash:placeType a rdf:Property ;
+    rdfs:label "Place Type" ;
+    rdfs:comment "Choose from CDASH Place Types" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:placeUse a rdf:Property ;
+    rdfs:label "Place Use/s";
+    rdfs:comment "Choose from http://www.getty.edu/research/tools/vocabularies/aat or consult CDASH documentation. 
+    Example: Bank, Hardware Store";
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:bldgMaterial a rdf:Property ;
+    rdfs:label "Building Material" ;
+    rdfs:comment "Choose from http://www.getty.edu/research/tools/vocabularies/aat or consult CDASH documentation.
+    Example: Brick, Reinforced Concrete";
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:mapLot a rdf:Property ;
+    rdfs:label "Assessing Map-Lot" ;
+    rdfs:comment "Look-Up at https://gis.cambridgema.gov/map ." ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:distDes a rdf:Property ;
+    rdfs:label "District / Designation" ;
+    rdfs:comment "Can be looked up at https://www.cambridgema.gov/historic/districtsHistoricProperties/districtsmap" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:macrisID a rdf:Property ;
+    rdfs:label "MACRIS Inventory Number" ;
+    rdfs:comment "See http://mhc-macris.net
+    Include a hyperlink to the MACRIS page for this place." ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:appearDate a rdf:Property ;
+    rdfs:label "Appear Date" ;
+    rdfs:comment "Date of earliest reference to this thing. 
+    Example: YYYY-MM-DD format or just YYYY" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:changeDate a rdf:Property ;
+    rdfs:label "Date Renovated" ;
+    rdfs:comment "Date of the earliest reference to the removal of this thing." ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:changeDesc a rdf:Property ;
+    rdfs:label "Change Description" ;
+    rdfs:comment "Describe a datated event in the life of this thing." ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:disappearDate a rdf:Property ;
+    rdfs:label "Disappear Date" ;
+    rdfs:comment "Earliest reference to the .
+    Example: YYYY-MM-DD format or just YYYY" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:dataQual a rdf:Property ;
+    rdfs:label "Data Qualifiers" ;
+    rdfs:comment "Notes about the sources and confidence level of references.
+    Example: Appearance date per 1873 map by Bromley" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:streetAddress a rdf:Property ;
+    rdfs:label "Street Address" ;
+    rdfs:comment "Full street address.  Use house numbering and suffix guidelines from CDASH Documentation.
+    Example: 77 Massachusetts Ave" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:streetName a rdf:Property ;
+    rdfs:label "Street Name" ;
+    rdfs:comment "Include street name and suffix. Alternate spellings can be indicated by duplicating this property.  Use suffix abbreviations from CDASH Documentation.
+    example: Massachusetts Ave" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:houseNum a rdf:Property ;
+    rdfs:label "House Number" ;
+    rdfs:comment "The numeric part of the street address.
+    example: '77'" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+# Appears on both Place and Document items.
+cdash:streetSort a rdf:Property ;
+    rdfs:label "StreetSort Key" ;
+    rdfs:comment "A string used to sort street addresses alphabetically.  The streetname comes first, then the number, left-padded with zeros to 6 characters.  In the case of items, append the document type.
+    Example: 'Massachusetts-Ave_000077_Article or Monograph'" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:locationScore a rdf:Property ;
+    rdfs:label "Location Score" ;
+    rdfs:comment "Estimate of location precision on a scale of 0 to 9" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+## Properties particular to Building type places
+
+cdash:bldgStyle a rdf:Property ;
+    rdfs:label "Building Style/s" ;
+    rdfs:comment "Choose from http://www.getty.edu/research/tools/vocabularies/aat or consult CDASH guidelines." ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:bldgMaterial a rdf:Property ;
+    rdfs:label "Building Material/s" ;
+    rdfs:comment "Choose from http://www.getty.edu/research/tools/vocabularies/aat or consult CDASH guidelines." ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdash:gisBldg a rdf:Property ;
+    rdfs:label "GIS Building ID" ;
+    rdfs:comment "Optional. Can be looked up at https://gis.cambridgema.gov/map ." ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+## personItem appears on Document or Place type items. It is a pointer to the identifier of a Place Item.
+cdash:personItem a rdf:Property ;
+    rdfs:label "CDASH Person" ;
+    rdfs:comment "Select a CDASH Person associated with this resource." ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+## placeItem appears on Document or Person type items. It is a pointer to the identifier of a Place Item.
+cdash:placeItem a rdf:Property ;
+    rdfs:label "CDASH Place" ;
+    rdfs:comment "Select a CDASH Place associated with this resource." ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
